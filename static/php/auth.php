@@ -22,9 +22,9 @@ class auth
 
 	public function _constructor()
 	{
-		$this->setKey('5774f89b9f434008fb8ca5ceb0592609');
-		$this->setSecret('i1ZJ93T+tuVT9wLTEY3EVGkb0HiZrxXHqp9yIeW4p2C7ahACD8q+RS90jAjCDPCcFb9vjngL0Q+FLDfB5bHl8g==');
-		$this->setPass('jsl00iqkwx');
+		$this->setKey('');
+		$this->setSecret('');
+		$this->setPass('');
 	}
 	public function initialize($key, $secret, $passphrase)
 	{
