@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body {
+            font-family: 'Ubuntu', 'Arial';
+        }
+        .ticker {
+            border: 1px solid #AAAAAA;
+            padding: 0.5em;
+            margin: 0.5em;
+        }
+        .bid {
+            color: green;
+        }
+        .ask {
+            color: red;
+        }
+
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/bundle.js"></script>
+	<?php include 'auth.php';?>
+</head>
+<body>
+    <div id="BTC-USD-price" class="ticker">
+        <div>Bitcoin (BTC)</div>
+        <div>
+            A: <span class="ask"></span><br/>
+            B: <span class="bid"></span>
+        </div>
+    </div>
+    <div id="BCH-USD-price" class="ticker">
+        <div>Bitcoin Cash</div>
+        <div>
+            A: <span class="ask"></span> (<span class="btc"></span> BTC)<br/>
+            B: <span class="bid"></span>
+        </div>
+    </div>
+    <div id="ETH-USD-price" class="ticker">
+        <div>Ethereum</div>
+        <div>
+            A: <span class="ask"></span> (<span class="btc"></span> BTC)<br/>
+            B: <span class="bid"></span>
+        </div>
+    </div>
+    <div id="account-Info" class="account">
+        <div>
+            <button id="accounts" onclick='location.href="?method=getAccounts"'>Get Accounts</button>
+        </div>
+        <div>
+            Account Balance
+        </div>
+        <div>
+            <span class="accBalance"></span>
+        </div>
+    </div>
+</body>
+
+</html>
